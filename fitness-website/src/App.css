@@ -1,38 +1,122 @@
-.App {
-  text-align: center;
+body, h1, h2, h3, p, ul, li {
+  margin: 10;
+  padding: 10;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  font-family: Arial, sans-serif;
+  background-color: #0e1a27;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HomePage {
+  width: 80%;
+}
+
+.header {
+  background-color: #173f5f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.menu-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-right: auto;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px 0;
+  color: white;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.menu-button:hover {
+  background-color: #526f99;
+  border-radius: 5px;
+}
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #0e1a27;
+  padding: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.workout-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.services {
+  margin-top: 40px;
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-button {
+  background-color: #526f99;
+  color: white;
+  border: none;
+  padding: 40px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.service-button:hover {
+  background-color: #385d8a;
+}
+
+.faq {
+  margin-top: 40px;
+}
+
+.faq h2 {
+  color: white;
+}
+
+.faq ul {
+  list-style-type: none;
+}
+
+.faq li {
+  margin-bottom: 10px;
 }
