@@ -1,7 +1,36 @@
 {
-  "workouts": {
-    "name": "Pushups",
-    "description:": "pushup",
-    "reps": 10
-  }
+  "workouts": [
+    {
+      "name": "pushups",
+      "description": "DO PUSHUPS",
+      "reps": 10
+    },
+    {
+      "name": "situps",
+      "description": "DO situps",
+      "reps": 10
+    },
+    {
+      "name": "pullups",
+      "description": "Do pullups",
+      "reps": 10
+    },
+    {
+      "name": "plank",
+      "description": "do a plank for 1 minute",
+      "reps": 1
+    }
+  ],
+  "meals": [
+    {
+      "name": "rice and chicken",
+      "calories": 2000,
+      "mealtime": "dinner"
+    },
+    {
+      "name": "Fresh fruit smoothie",
+      "calories": 500,
+      "mealtime": "breakfast"
+    }
+  ]
 }

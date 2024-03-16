@@ -28,10 +28,7 @@ function App() {
                         <Route path="news" element={<News/>}/>
                     </Routes>
                 </main>
-
-
             </BrowserRouter>
-
         </div>
     );
 }
