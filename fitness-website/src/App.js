@@ -11,6 +11,7 @@ import React from "react";
 import Workouts from "./Workouts";
 import Meals from "./Meals";
 import News from "./News";
+import Calculators from "./Calculators";
 
 function App() {
     return (
@@ -24,7 +25,7 @@ function App() {
                         <Route index element={<HomePage/>}/>
                         <Route path="workouts" element={<Workouts/>}/>
                         <Route path="meals" element={<Meals/>}/>
-                        {/*<Route path="calculators" element={<Calculators/>}/>*/}
+                        <Route path="calculators" element={<Calculators/>}/>
                         <Route path="news" element={<News/>}/>
                     </Routes>
                 </main>
