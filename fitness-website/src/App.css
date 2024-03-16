@@ -5,8 +5,8 @@ body, h1, h2, h3, p, ul, li {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #0e1a27;
-  color: white;
+  background-color: #222831;
+  color: #eeeeee;
 }
 
 .container {
@@ -16,24 +16,18 @@ body {
   min-height: 100vh;
 }
 
-.HomePage {
-  width: 80%;
-}
-
-.header {
-  background-color: #173f5f;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  border-radius: 10px;
-  margin-top: 15px;
+.App {
+  padding: 80px;
 }
 
 .menu {
   display: flex;
+  background-color: #31363F;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
   align-items: center;
-  flex: 1;
 }
 
 .menu-logo {
@@ -62,7 +56,7 @@ body {
 .content {
   margin-top: 20px;
   text-align: center;
-  background-color: #0e1a27;
+  background-color: #222831;
   padding: 20px;
 }
 

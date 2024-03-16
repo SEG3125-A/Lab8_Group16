@@ -7,16 +7,6 @@ function HomePage() {
     return (
         <div className="container">
             <div className="HomePage">
-                <div className="header">
-                    <div className="menu">
-                        <div className="menu-logo">FitnessFusion</div>
-                        <button className="menu-button">Home</button>
-                        <button className="menu-button">Workouts</button>
-                        <button className="menu-button">Meals</button>
-                        <button className="menu-button">Calculators</button>
-                        <button className="menu-button">News</button>
-                    </div>
-                </div>
                 <div className="content">
                     <img src={photo} alt="Photo" className="photo" />
                     <img src={workoutImage} alt="Workout" className="workout-image" />
