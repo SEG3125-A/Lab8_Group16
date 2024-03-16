@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px; /* Changed border radius */
+    padding: 3rem;
+    width: 80%; /* Adjust width as needed */
+    margin: 2rem auto; /* Center the container and add margin */
+    background: linear-gradient(to bottom, #222831, #31363F); /* Changed background color */
+    box-shadow: 0 0 20px 5px rgba(200, 200, 200, 0.5); /* Updated box-shadow color */
+}
+
+.calculator-section {
+    margin-bottom: 2rem; /* Add margin between calculator sections */
+}
+
+input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 15px 4px;
+    margin: 8px 0;
+    border-radius: 16px; /* Changed border radius */
+    border: 2px solid #222831; /* Changed border color */
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    margin: 8px 0;
+    padding: 15px 0;
+    background-color: #222831; /* Changed background color */
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 16px; /* Changed border radius */
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: #222; /* Darker background color */
+    color: #a6bcda;
+}
+
+.center {
+    text-align: center;
+    margin: 24px 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.img-container {
+    text-align: center;
+}
+
+.img-container img {
+    height: 200px;
+}
