@@ -15,13 +15,15 @@ function Workouts() {
     }, []);
 
     return (
-        // Check if null then load workouts
-        <div>
+
+        <div className>
             <h1>Workouts</h1>
-            {workouts && console.log(workouts)}
-            {workouts && workouts.map(workout => (
-                <WorkoutCard workout={workout}/>
-            ))}
+            <div className="flex-grid">
+                {/*Check if null then load workouts*/}
+                {workouts && workouts.map(workout => (
+                    <WorkoutCard workout={workout}/>
+                ))}
+            </div>
         </div>
 
     )
@@ -32,6 +34,7 @@ function WorkoutCard( {workout} ) {
         <div id={workout.id} className="workout-card">
             <h2>{workout.name}</h2>
             <p>Description: {workout.description}</p>
+            <p><b>Target: </b> {workout.target}</p>
             <p>Reps: {workout.reps}</p>
         </div>
     )

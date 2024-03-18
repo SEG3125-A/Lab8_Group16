@@ -3,34 +3,49 @@
     {
       "name": "pushups",
       "description": "DO PUSHUPS",
-      "reps": 10
+      "reps": 10,
+      "target": "triceps, pectoral muscles, and shoulders"
     },
     {
       "name": "situps",
       "description": "DO situps",
+      "target": "core",
       "reps": 10
     },
     {
       "name": "pullups",
       "description": "Do pullups",
+      "target": "upper body",
       "reps": 10
     },
     {
       "name": "plank",
       "description": "do a plank for 1 minute",
+      "target": "core",
       "reps": 1
     }
   ],
   "meals": [
     {
       "name": "rice and chicken",
+      "description": "1 cup of rice with a chicken breast",
       "calories": 2000,
-      "mealtime": "dinner"
+      "mealtime": "dinner",
+      "price": "$$"
     },
     {
       "name": "Fresh fruit smoothie",
+      "description": "Strawberry's, peaches, mango, and protein powder",
       "calories": 500,
-      "mealtime": "breakfast"
+      "mealtime": "breakfast",
+      "price": "$"
+    },
+    {
+      "name": "Shrimp Tostadas with Avocado Salsa",
+      "description": "Delicious shrimp tostadas with avocado salsa",
+      "calories": 297,
+      "mealtime": "dinner",
+      "price": "$$"
     }
   ]
 }

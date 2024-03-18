@@ -13,6 +13,7 @@ function HomePage() {
                     <section className="services">
                         <h2>Our Services</h2>
                         <div className="service-buttons">
+                            {/*<Card name={"Custom Workout Plan"} image_src={workoutImage} description={"description... workouts"}></Card>*/}
                             <button className="service-button">Custom Workout Plan</button>
                             <button className="service-button">Custom Diet Plan</button>
                             <button className="service-button">Calculators</button>
@@ -34,6 +35,16 @@ function HomePage() {
             </div>
         </div>
     );
+}
+
+function Card({image_src, name, description}) {
+    return(
+        <div className={"workout-card"}>
+            <img src={image_src} alt={name}></img>
+            <h3>{name}</h3>
+            <p>{description}</p>
+        </div>
+    )
 }
 
 export default HomePage;

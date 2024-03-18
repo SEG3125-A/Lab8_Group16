@@ -1,6 +1,10 @@
 body, h1, h2, h3, p, ul, li {
-  margin: 10;
-  padding: 10;
+  margin: 10px;
+  padding: 10px;
+}
+
+main {
+  margin: 10px;
 }
 
 body {
@@ -12,28 +16,30 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
 }
 
 .App {
-  padding: 80px;
+  padding: 0px 80px;
 }
 
 .menu {
   display: flex;
   background-color: #31363F;
+  color: #eeeeee;
   justify-content: space-between;
   padding: 10px;
   border-radius: 10px;
   margin-top: 15px;
   align-items: center;
+  box-shadow: 0px 0px 15px 5px #000000;
 }
 
 .menu-logo {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
-  color: black;
+  color: rgba(238, 238, 238, 0.93);
   margin-right: auto;
 }
 
@@ -43,15 +49,27 @@ body {
   cursor: pointer;
   font-size: 16px;
   padding: 20px 0;
-  color: white;
+  color: rgba(238, 238, 238, 0.93);
   text-align: center;
   margin: 0 10px;
+  text-decoration: none;
 }
 
 .menu-button:hover {
-  background-color: #526f99;
+  background-color: #76ABAE;
   border-radius: 5px;
 }
+
+.menu-button:hover.active {
+  background-color: #76ABAE;
+  color: #eeeeee;
+  border-radius: 5px;
+}
+
+.active {
+  color: #76ABAE;
+}
+
 
 .content {
   margin-top: 20px;
@@ -85,7 +103,7 @@ body {
 
 .service-button {
   background-color: #526f99;
-  color: white;
+  color: rgba(238, 238, 238, 0.93);
   border: none;
   padding: 40px 0;
   font-size: 18px;
@@ -104,7 +122,7 @@ body {
 }
 
 .faq h2 {
-  color: white;
+  color: rgba(238, 238, 238, 0.93);
 }
 
 .faq ul {
@@ -116,11 +134,21 @@ body {
 }
 
 .workout-card {
-  display: block;
+  /*display: compact;*/
   padding: 5px 10px;
-  margin: 50px;
-  max-width: 30%;
+  width: 25%;
+  margin-top: 20px;
   background-color: #31363f;
   border-radius: 20px;
   box-shadow: 0px 0px 15px 5px #000000;
 }
+
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
