@@ -4,24 +4,24 @@
       "name": "pushups",
       "description": "DO PUSHUPS",
       "reps": 10,
-      "target": "triceps, pectoral muscles, and shoulders"
+      "target": ["upper body", "core"]
     },
     {
       "name": "situps",
       "description": "DO situps",
-      "target": "core",
+      "target": ["core"],
       "reps": 10
     },
     {
       "name": "pullups",
       "description": "Do pullups",
-      "target": "upper body",
+      "target": ["upper body"],
       "reps": 10
     },
     {
       "name": "plank",
       "description": "do a plank for 1 minute",
-      "target": "core",
+      "target": ["core"],
       "reps": 1
     }
   ],
@@ -31,21 +31,24 @@
       "description": "1 cup of rice with a chicken breast",
       "calories": 2000,
       "mealtime": "dinner",
-      "price": "$$"
+      "price": "$$",
+      "dietaryRestrictions": []
     },
     {
       "name": "Fresh fruit smoothie",
       "description": "Strawberry's, peaches, mango, and protein powder",
       "calories": 500,
       "mealtime": "breakfast",
-      "price": "$"
+      "price": "$",
+      "dietaryRestrictions": ["vegetarian", "vegan"]
     },
     {
       "name": "Shrimp Tostadas with Avocado Salsa",
       "description": "Delicious shrimp tostadas with avocado salsa",
       "calories": 297,
       "mealtime": "dinner",
-      "price": "$$"
+      "price": "$$",
+      "dietaryRestrictions": []
     }
   ]
 }

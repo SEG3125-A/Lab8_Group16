@@ -3,7 +3,17 @@ import photo from './image.png';
 import workoutImage from './workout.png';
 import './App.css';
 
+
+
+import {ArrowDownward, ExpandLess, ExpandMore} from "@mui/icons-material";
+import {Accordion, AccordionDetails, AccordionSummary} from "@mui/material";
+
 function HomePage() {
+    const [open, setOpen] = React.useState(true);
+
+    const handleClick = () => {
+        setOpen(!open);
+    };
     return (
         <div className="container">
             <div className="HomePage">
@@ -21,15 +31,76 @@ function HomePage() {
                     </section>
                     <section className="faq">
                         <h2>FAQs</h2>
-                        <ul>
-                            <li>How does the BMI calculator work?</li>
-                            <li>How long should I workout for?</li>
-                            <li>What are the different types of training?</li>
-                            <li>Do I need to lift weights to workout?</li>
-                            <li>Why do you collect my age?</li>
-                            <li>How much do workout plans and fitness plans cost?</li>
-                            <li>I have dietary restrictions, can I get a fitness plan that accommodates them?</li>
-                        </ul>
+
+                        <Accordion
+                            expandIcon={<ArrowDownward/>}
+                            aria-controls="panel1-content"
+                            id="panel1-header">
+                            <AccordionSummary>How does the BMI calculator work?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expandIcon={<ArrowDownward/>}
+                            aria-controls="panel2-content"
+                            id="panel2-header">
+                            <AccordionSummary>How long should I workout for?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expandIcon={<ExpandMore/>}
+                            aria-controls="panel3-content"
+                            id="panel3-header">
+                            <AccordionSummary>What are the different types of training?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expandIcon={<ExpandMore/>}
+                            aria-controls="panel4-content"
+                            id="panel4-header">
+                            <AccordionSummary>Do I need to lift weights to workout?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expandIcon={<ArrowDownward/>}
+                            aria-controls="panel3-content"
+                            id="panel3-header">
+                            <AccordionSummary>Why do you collect my age?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expandIcon={<ArrowDownward/>}
+                            aria-controls="panel3-content"
+                            id="panel3-header">
+                            <AccordionSummary>How much do workout plans and fitness plans cost?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
+
+                        <Accordion
+                            expandIcon={<ArrowDownward/>}
+                            aria-controls="panel3-content"
+                            id="panel3-header">
+                            <AccordionSummary>I have dietary restrictions, can I get a fitness plan that accommodates them?</AccordionSummary>
+                            <AccordionDetails>
+                                answer...
+                            </AccordionDetails>
+                        </Accordion>
                     </section>
                 </div>
             </div>
