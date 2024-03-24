@@ -1,0 +1,157 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 10px;
+  padding: 10px;
+}
+
+main {
+  margin: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.App {
+  padding: 0px 80px;
+}
+
+.menu {
+  display: flex;
+  background-color: #31363F;
+  color: #eeeeee;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 15px;
+  align-items: center;
+  box-shadow: 0px 0px 15px 5px #000000;
+}
+
+.menu-logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: rgba(238, 238, 238, 0.93);
+  margin-right: auto;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px 0;
+  color: rgba(238, 238, 238, 0.93);
+  text-align: center;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  background-color: #76ABAE;
+  border-radius: 5px;
+}
+
+.menu-button:hover.active {
+  background-color: #76ABAE;
+  color: #eeeeee;
+  border-radius: 5px;
+}
+
+.active {
+  color: #76ABAE;
+}
+
+
+.content {
+  margin-top: 20px;
+  text-align: center;
+  background-color: #222831;
+  padding: 20px;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.workout-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.services {
+  margin-top: 40px;
+}
+
+.service-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-button {
+  background-color: #526f99;
+  color: rgba(238, 238, 238, 0.93);
+  border: none;
+  padding: 40px 0;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  width: calc(100% / 3);
+  text-align: center;
+}
+
+.service-button:hover {
+  background-color: #385d8a;
+}
+
+.faq {
+  margin-top: 40px;
+}
+
+.faq h2 {
+  color: rgba(238, 238, 238, 0.93);
+}
+
+.faq ul {
+  list-style-type: none;
+}
+
+.faq li {
+  margin-bottom: 10px;
+}
+
+.workout-card {
+  /*display: compact;*/
+  padding: 5px 10px;
+  width: 25%;
+  margin-top: 20px;
+  background-color: #31363f;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px 5px #000000;
+}
+
+.flex-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+.MuiAccordionSummary {
+  background-color: black;
+}
