@@ -25,6 +25,34 @@
       "reps": 1
     }
   ],
+
+  "workouts-fr": [
+    {
+      "name": "pompes",
+      "description": "FAIRE DES POMPES",
+      "reps": 10,
+      "target": ["haut du corps", "centre"]
+    },
+    {
+      "name": "redressements assis",
+      "description": "FAIRE des redressements assis",
+      "target": ["centre"],
+      "reps": 10
+    },
+    {
+      "name": "tractions",
+      "description": "Faire des tractions",
+      "target": ["haut du corps"],
+      "reps": 10
+    },
+    {
+      "name": "planche",
+      "description": "faire une planche pendant 1 minute",
+      "target": ["centre"],
+      "reps": 1
+    }
+  ],
+
   "meals": [
     {
       "name": "rice and chicken",
@@ -50,5 +78,33 @@
       "price": "$$",
       "dietaryRestrictions": []
     }
+  ],
+
+  "meals-fr": [
+    {
+      "name": "riz et poulet",
+      "description": "1 tasse de riz avec un blanc de poulet",
+      "calories": 2000,
+      "heureRepas": "dîner",
+      "prix": "$$",
+      "restrictionsDietetiques": []
+    },
+    {
+      "name": "Smoothie aux fruits frais",
+      "description": "Fraises, pêches, mangue et poudre protéinée",
+      "calories": 500,
+      "heureRepas": "petit-déjeuner",
+      "prix": "$",
+      "restrictionsDietetiques": ["végétarien", "végétalien"]
+    },
+    {
+      "name": "Tostadas de crevettes avec salsa à l'avocat",
+      "description": "Délicieuses tostadas de crevettes avec salsa à l'avocat",
+      "calories": 297,
+      "heureRepas": "dîner",
+      "prix": "$$",
+      "restrictionsDietetiques": []
+    }
   ]
 }
+
