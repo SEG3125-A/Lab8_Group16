@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import './App.css';
 import HomePage from "./HomePage";
 import Navbar from "./Navbar";
@@ -5,28 +6,32 @@ import {
     BrowserRouter,
     Routes,
     Route,
-    NavLink
 } from "react-router-dom";
-import React from "react";
 import Workouts from "./Workouts";
 import Meals from "./Meals";
 import News from "./News";
 import Calculators from "./Calculators";
 
 function App() {
+    const [language, setLanguage] = useState('english');
+
+    const toggleLanguage = () => {
+        setLanguage(language === 'english' ? 'french' : 'english');
+    };
+
     return (
         <div className="App">
             <BrowserRouter>
                 <header>
-                    <Navbar/>
+                    <Navbar toggleLanguage={toggleLanguage} language={language} />
                 </header>
                 <main>
                     <Routes>
-                        <Route index element={<HomePage/>}/>
-                        <Route path="workouts" element={<Workouts/>}/>
-                        <Route path="meals" element={<Meals/>}/>
-                        <Route path="calculators" element={<Calculators/>}/>
-                        <Route path="news" element={<News/>}/>
+                        <Route index element={<HomePage language={language} />} />
+                        <Route path="workouts" element={<Workouts language={language} />} />
+                        <Route path="meals" element={<Meals language={language} />} />
+                        <Route path="calculators" element={<Calculators language={language} />} />
+                        <Route path="news" element={<News language={language} />} />
                     </Routes>
                 </main>
             </BrowserRouter>
